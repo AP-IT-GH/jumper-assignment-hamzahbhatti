@@ -2,22 +2,31 @@
     "MLPlayer": {
         "checkpoints": [
             {
-                "steps": 4723,
-                "file_path": "results\\jumper\\MLPlayer\\MLPlayer-4723.onnx",
-                "reward": null,
-                "creation_time": 1714136242.3184955,
+                "steps": 499948,
+                "file_path": "results\\jumper\\MLPlayer\\MLPlayer-499948.onnx",
+                "reward": -1.9866666873296102,
+                "creation_time": 1714148863.4530241,
                 "auxillary_file_paths": [
-                    "results\\jumper\\MLPlayer\\MLPlayer-4723.pt"
+                    "results\\jumper\\MLPlayer\\MLPlayer-499948.pt"
+                ]
+            },
+            {
+                "steps": 526002,
+                "file_path": "results\\jumper\\MLPlayer\\MLPlayer-526002.onnx",
+                "reward": null,
+                "creation_time": 1714148903.2204218,
+                "auxillary_file_paths": [
+                    "results\\jumper\\MLPlayer\\MLPlayer-526002.pt"
                 ]
             }
         ],
         "final_checkpoint": {
-            "steps": 4723,
+            "steps": 526002,
             "file_path": "results\\jumper\\MLPlayer.onnx",
             "reward": null,
-            "creation_time": 1714136242.3184955,
+            "creation_time": 1714148903.2204218,
             "auxillary_file_paths": [
-                "results\\jumper\\MLPlayer\\MLPlayer-4723.pt"
+                "results\\jumper\\MLPlayer\\MLPlayer-526002.pt"
             ]
         }
     },

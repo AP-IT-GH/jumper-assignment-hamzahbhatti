@@ -7,8 +7,8 @@ public class Spawner : MonoBehaviour
 
     public GameObject prefab = null;
     public Transform spawnpoint = null;
-    public float min = 1.0f;
-    public float max = 3.5f;
+    public float min = 3.0f;
+    public float max = 7.5f;
 
     // Start is called before the first frame update
     void Start()

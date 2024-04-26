@@ -117,7 +117,7 @@ GameObject:
   - component: {fileID: 2774765251420358297}
   - component: {fileID: 4377720084524723505}
   - component: {fileID: 3245639948502968736}
-  - component: {fileID: 9035814536539212298}
+  - component: {fileID: 8036418374431323681}
   m_Layer: 0
   m_Name: Road
   m_TagString: road
@@ -230,8 +230,9 @@ GameObject:
   - component: {fileID: 3632456216995722613}
   - component: {fileID: 7554163151574188199}
   - component: {fileID: 2477618053726475930}
-  - component: {fileID: 7737143818621343611}
   - component: {fileID: 7347948318240420083}
+  - component: {fileID: 8922817742072332359}
+  - component: {fileID: 5574938967816731065}
   m_Layer: 0
   m_Name: MLPlayer
   m_TagString: Untagged
@@ -400,20 +401,6 @@ MonoBehaviour:
   MaxStep: 0
   jump: {x: 0, y: 0, z: 0}
   jumpHeight: 7
---- !u!114 &7737143818621343611
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3558104769628359159}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a5c9d521e5ef4759a8246a07d52221e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DecisionPeriod: 1
-  TakeActionsBetweenDecisions: 1
 --- !u!114 &7347948318240420083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -444,6 +431,38 @@ MonoBehaviour:
   rayMissColor: {r: 1, g: 1, b: 1, a: 1}
   m_StartVerticalOffset: 0
   m_EndVerticalOffset: 0
+--- !u!114 &8922817742072332359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3558104769628359159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8d770db4dfbeac4c8da76f9cfb5370e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agentParameters:
+    maxStep: 0
+  hasUpgradedFromAgentParameters: 1
+  MaxStep: 0
+  jump: {x: 0, y: 0, z: 0}
+  jumpHeight: 7
+--- !u!114 &5574938967816731065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3558104769628359159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a5c9d521e5ef4759a8246a07d52221e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DecisionPeriod: 5
+  TakeActionsBetweenDecisions: 1
 --- !u!1 &3814594357656160122
 GameObject:
   m_ObjectHideFlags: 0
@@ -718,9 +737,9 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3782950157767495346, guid: b33ff69b41b16684681cc84867fd4044, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 9035814536539212298}
+      addedObject: {fileID: 8036418374431323681}
   m_SourcePrefab: {fileID: 100100000, guid: b33ff69b41b16684681cc84867fd4044, type: 3}
---- !u!114 &9035814536539212298
+--- !u!114 &8036418374431323681
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -732,7 +751,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14892047858b3d047b1ed32bcee609d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 7115133439048772474, guid: d91ad98b97d73c0459fe664e1b0d0b64, type: 3}
-  spawnpoint: {fileID: 8194091392662299114}
-  min: 1
-  max: 3.5
+  prefab: {fileID: 0}
+  spawnpoint: {fileID: 0}
+  min: 3
+  max: 7.5
