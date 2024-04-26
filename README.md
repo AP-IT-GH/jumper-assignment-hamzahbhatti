@@ -51,16 +51,16 @@ Before starting, ensure you have the following:
 3. **Set up MLPlayer**:
    - Attach a `Rigidbody` component to the MLPLayer object.
    - Create a new script named `MLPlayer` and attach it to the player.
-   - Use the code from file (link to MLPlayer.cs file).
+   - Use the code from file [MLPlayer.cs](https://github.com/AP-IT-GH/jumper-assignment-hamzahbhatti/blob/main/Assets/MLPlayer.cs).
    - Change the Behavior Name to `MLPlayer`.
 
 4. **Obstacle behavior**:
    - Create an obstacle script for obstacle objects to define their movement and behavior.
-   - Use the code from file (link to Obstacle.cs file).
+   - Use the code from file [Obstacle.cs](https://github.com/AP-IT-GH/jumper-assignment-hamzahbhatti/blob/main/Assets/Obstacle.cs).
 
 5. **Spawner script**:
    - Create a Spawner script and attach it to the road object.
-   - Use the code from file (link to Spawner.cs file). [a link](https://github.com/AP-IT-GH/jumper-assignment-hamzahbhatti/blob/main/Assets/Obstacle.cs)
+   - Use the code from file [Spawner.cs](https://github.com/AP-IT-GH/jumper-assignment-hamzahbhatti/blob/main/Assets/Spawner.cs).
 
 6. **Setup spawning points and prefab**:
    - Define spawn points (`SpawnPt` and `WallEnd`) within the road object.
