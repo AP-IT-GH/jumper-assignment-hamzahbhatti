@@ -1,12 +1,10 @@
 # How to train an ML Agent to jump over oncoming obstacles
 
-*Youssef Kasmi*
-
-*Hamzah Bhatti*
+*Youssef Kasmi*  & *Hamzah Bhatti*
 
 ## Introduction
 
-The goal of this project is to train an ML Agent to successfully jump over oncoming obstacles using Unity and MLAgents. This guide provides a step-by-step walkthrough to achieve this outcome.
+The goal of this project is to train an ML Agent to successfully jump over oncoming obstacles using Unity and ML-Agents. This guide provides a step-by-step walkthrough to achieve this outcome.
 
 ## Requirements
 
@@ -14,14 +12,15 @@ Before starting, ensure you have the following:
 
 - Unity Hub (version 3.7.0)
 - Unity Editor (version 2022.3.19f)
-- MLAgents package (Python)
-- Anaconda environment with MLAgent setup
+- MLAgents package (Python/Anaconda)
+- Anaconda environment with MLAgents set up
 
 ## Creating a Project
 
 1. **Open Unity Hub**:
    - Launch Unity Hub.
    - Click on "New project."
+   - Start a new 3D project.
 
 2. **Project setup**:
    - Choose a project name and location.
@@ -36,6 +35,7 @@ Before starting, ensure you have the following:
 1. **Create following objects**:
    - Ensure that every object has the right tags and naming.
    - You can use the pictures below to fill in the parameters.
+     
 ![image](https://github.com/AP-IT-GH/jumper-assignment-yfish1/assets/73119869/0689f624-79a7-4d1e-89b6-48e8b05ee213)
 ![image](https://github.com/AP-IT-GH/jumper-assignment-yfish1/assets/73119869/ddbe49df-2a44-4312-8c62-b63a7fc0971b)
 ![image](https://github.com/AP-IT-GH/jumper-assignment-yfish1/assets/73119869/efe7dcd6-867d-422e-934f-f5f827d0f08f)
@@ -46,7 +46,7 @@ Before starting, ensure you have the following:
 
 
 2. **Create prefab**:
-   - Convert the obstacle object into a prefab.
+   - Convert the obstacle object into a prefab. This is especially important so each instance of the obstacle has the `obstacle.cs` script.
 
 3. **Set up MLPlayer**:
    - Attach a `Rigidbody` component to the MLPLayer object.
@@ -66,7 +66,8 @@ Before starting, ensure you have the following:
    - Define spawn points (`SpawnPt` and `WallEnd`) within the road object.
    - Drag the obstacle prefab into the prefab field in the spawner script.
    - Link spawnpt to the spawn point in the spawner script.
-     ![image](https://github.com/AP-IT-GH/jumper-assignment-yfish1/assets/73119869/7bba38e4-e9e8-4ffa-b703-feff3b00f91a)
+   
+   ![image](https://github.com/AP-IT-GH/jumper-assignment-yfish1/assets/73119869/7bba38e4-e9e8-4ffa-b703-feff3b00f91a)
 
 7. **Add WallReward object to the obstacle prefab**:
     ![image](https://github.com/AP-IT-GH/jumper-assignment-yfish1/assets/73119869/5f040ae9-5f25-415e-95bc-c5b583d45393)
@@ -86,12 +87,16 @@ Before starting, ensure you have the following:
 ## Let's train the Agent
 
 1. **Open your project in the mlagents environment terminal**:
-   - Once open, use following comman
+   - Once opened, use following comman
   ```bash
-   mlagents-learn
+   mlagents-learn config/MLPlayer.yaml --run-id=jumper2 --time-scale=5
 ```
-2. **Once ready, the terminal will notify you when you can start your project in Unity**
 
+2. **Once ready, the terminal will notify you when you can start your training in Unity. You can do this by pressing the play button.**
+
+
+## Tensorboard
+![image](https://github.com/AP-IT-GH/jumper-assignment-hamzahbhatti/blob/main/Assets/Schermafbeelding%202024-04-26%20192740.png)
 ## Conclusion
 
-[TO BE DONE]
+The graphs in Tensorboard tell us the training was overall successful. The cumulative reward slowly grew as our agent got better and better at finding his rewards. The length of our episode however didn't evolve like we had hoped to. This could be explained by the fact that we trained 16 instances of our scenario in a single environment.
