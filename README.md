@@ -87,7 +87,7 @@ Before starting, ensure you have the following:
 ## Let's train the Agent
 
 1. **Open your project in the mlagents environment terminal**:
-   - Once opened, use following comman
+   - Once opened, use following command
   ```bash
    mlagents-learn config/MLPlayer.yaml --run-id=jumper2 --time-scale=5
 ```
