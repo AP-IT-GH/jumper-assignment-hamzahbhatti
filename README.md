@@ -60,7 +60,7 @@ Before starting, ensure you have the following:
 
 5. **Spawner script**:
    - Create a Spawner script and attach it to the road object.
-   - Use the code from file (link to Spawner.cs file).
+   - Use the code from file (link to Spawner.cs file). [a link](https://github.com/AP-IT-GH/jumper-assignment-hamzahbhatti/blob/main/Assets/Obstacle.cs)
 
 6. **Setup spawning points and prefab**:
    - Define spawn points (`SpawnPt` and `WallEnd`) within the road object.
